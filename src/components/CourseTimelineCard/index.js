@@ -1,4 +1,3 @@
-// Write your code here
 import {AiFillClockCircle} from 'react-icons/ai'
 import './index.css'
 
@@ -16,7 +15,7 @@ const CourseTimelineCard = props => {
         <p>{description}</p>
       </div>
       {tagsList.map(tag => (
-        <button type="button">{tag.name}</button>
+        <p>{tag.name}</p>
       ))}
     </div>
   )
