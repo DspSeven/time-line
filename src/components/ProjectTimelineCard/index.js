@@ -14,7 +14,7 @@ const ProjectTimelineCard = props => {
   console.log(projectDetails)
   return (
     <div>
-      <img src={imageUrl} alt={projectTitle} height={100} width={100} />
+      <img src={imageUrl} alt="project" height={100} width={100} />
       <div>
         <h1>{projectTitle}</h1>
         <div>
@@ -22,9 +22,7 @@ const ProjectTimelineCard = props => {
           <p>{duration}</p>
         </div>
         <p>{description}</p>
-        <button type="button" href={projectUrl} target="_blank">
-          Visit
-        </button>
+        <a href={projectUrl}>Visit</a>
       </div>
     </div>
   )
